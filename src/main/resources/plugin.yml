@@ -1,0 +1,33 @@
+name: MinecraftWerewolf
+version: 1.0
+main: com.example.werewolf.MinecraftWerewolf
+api-version: 1.21.4
+
+commands:
+  join:
+    description: Join the werewolf game
+    usage: /<command>
+  leave:
+    description: Leave the werewolf game
+    usage: /<command>
+  start:
+    description: Start the werewolf game (OP only)
+    usage: /<command>
+  stop:
+    description: Stop the werewolf game (OP only)
+    usage: /<command>
+  list:
+    description: List players in the werewolf game
+    usage: /<command>
+  setwerewolves:
+    description: Set the number of werewolves (OP only)
+    usage: /<command> <number>
+  settasks:
+    description: Set the number of tasks for villagers (OP only)
+    usage: /<command> <number>
+  setcooldown:
+    description: Set the cooldown for werewolf skills (OP only)
+    usage: /<command> <time>
+  togglefriendlyfire:
+    description: Toggle friendly fire for villagers (OP only)
+    usage: /<command>

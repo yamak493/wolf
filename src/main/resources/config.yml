@@ -1,0 +1,44 @@
+# Contents of the file: /minecraft-werewolf/minecraft-werewolf/src/main/resources/config.yml
+
+# Default configuration settings for the Minecraft Werewolf plugin
+# This file can be modified by server administrators to customize game behavior
+
+# Number of werewolves in the game
+werewolf_count: 1
+
+# Number of villagers in the game
+villager_count: 4
+
+# Number of coal required for villagers to win
+coal_required: 30
+
+# Cooldown time for werewolf skills in seconds
+skill_cooldown: 180
+
+# Enable or disable specific skills for werewolves
+skills:
+  shadow_walk: true
+  wolf_summon: true
+  fang_skill: true
+  night_vision: true
+
+# Settings for the game map
+map:
+  skeleton_spawn_interval: 5 # in minutes
+  skeleton_spawn_multiplier: 5 # number of skeletons per player
+
+# Item prices for emerald trading
+item_prices:
+  wooden_sword: 1
+  totem_of_undying: 2
+  splash_potion: 3
+  apple: 1
+  bow: 5
+  arrow: 1
+
+# Game rules
+rules:
+  allow_vc_after_death: false # Whether players can use voice chat after dying
+  teleport_to_lobby_on_death: true # Whether players are teleported to the lobby upon death
+
+# Additional settings can be added below as needed

@@ -1,0 +1,36 @@
+plugins {
+    id 'java'
+}
+
+group 'com.example.werewolf'
+version '1.0.0'
+sourceCompatibility = '17' // Set the Java version to 17
+
+repositories {
+    mavenCentral() // Use Maven Central repository for dependencies
+}
+
+dependencies {
+    // Paper API dependency for Minecraft plugin development
+    compileOnly 'org.spigotmc:paper-api:1.21.4' // Specify the Paper API version
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8' // Set the encoding to UTF-8
+}
+
+jar {
+    // Specify the main class for the plugin
+    manifest {
+        attributes(
+            'Main-Class': 'com.example.werewolf.MinecraftWerewolf', // Main class of the plugin
+            'Implementation-Title': project.name,
+            'Implementation-Version': project.version
+        )
+    }
+}
+
+tasks.build {
+    // Task to build the plugin
+    dependsOn jar // Ensure the jar task is executed when building
+}
